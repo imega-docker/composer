@@ -1,47 +1,42 @@
 # Composer
 This is docker image to run the [composer](https://getcomposer.org).
 
-[![](https://badge.imagelayers.io/imega/composer:2.3.1.svg)](https://imagelayers.io/?images=imega/composer:2.3.1 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/imega/composer:1.2.0.svg)](http://microbadger.com/images/imega/composer:1.2.0 "Get your own image badge on microbadger.com")
 
-Image size: 36 MB
+Image size: 34.81 MB
 
-From image: alpine:3.3
+From image: alpine:3.4
 
-PHP 7.0.6
+PHP 7.0.9
 
-Composer version: 1.1.0
+Composer version: 1.2.0
 
 ## Usage
 
 ```
-$ docker run --rm -v /path/to/project/:/data imega/composer:2.3.1 install --no-dev --ignore-platform-reqs --no-interaction
+$ docker run --rm -v /path/to/project/:/data imega/composer:1.2.0 install --no-dev --ignore-platform-reqs --no-interaction
 ```
 
 ## Alpine Packages
-  - musl
-  - zlib
-  - libcrypto1.0
-  - libssl1.0
-  - openssl
-  - busybox
-  - ca-certificates
-  - libssh2
-  - curl
-  - expat
-  - pcre
-  - git
-  - php7-common
-  - libxml2
-  - php7
-  - php7-json
-  - php7-mbstring
-  - libcom_err
-  - krb5-conf
-  - keyutils-libs
-  - libverto
-  - krb5-libs
-  - php7-openssl
-  - php7-phar
+  - musl (1.1.14-r11)
+  - zlib (1.2.8-r2)
+  - libcrypto1.0 (1.0.2h-r1)
+  - busybox (1.24.2-r11)
+  - ca-certificates (20160104-r4)
+  - libssl1.0 (1.0.2h-r1)
+  - libssh2 (1.7.0-r0)
+  - libcurl (7.50.1-r0)
+  - expat (2.1.1-r1)
+  - pcre (8.38-r1)
+  - git (2.8.3-r0)
+  - php7-common (7.0.9-r0)
+  - libxml2 (2.9.4-r0)
+  - php7 (7.0.9-r0)
+  - php7-json (7.0.9-r0)
+  - php7-mbstring (7.0.9-r0)
+  - php7-openssl (7.0.9-r0)
+  - php7-phar (7.0.9-r0)
+  - php7-zlib (7.0.9-r0)
 
 ## PHP Modules
   - Core
@@ -61,6 +56,7 @@ $ docker run --rm -v /path/to/project/:/data imega/composer:2.3.1 install --no-d
   - standard
   - tokenizer
   - xmlwriter
+  - zlib
 
 ## The MIT License (MIT)
 
