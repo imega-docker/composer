@@ -3,6 +3,8 @@ This is docker image to run the [composer](https://getcomposer.org).
 
 [![](https://images.microbadger.com/badges/image/imega/composer:1.2.0.svg)](http://microbadger.com/images/imega/composer:1.2.0 "Get your own image badge on microbadger.com")
 
+[![CircleCI](https://circleci.com/gh/imega-docker/composer.svg?style=svg)](https://circleci.com/gh/imega-docker/composer)
+
 Image size: 34.81 MB
 
 From image: alpine:3.4

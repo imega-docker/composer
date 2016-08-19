@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - docker build -t imega/composer:$CIRCLE_SHA1 .
+
+test:
+  post:
+    - docker run --rm -v `pwd`:/data imega/composer:$CIRCLE_SHA1 install
