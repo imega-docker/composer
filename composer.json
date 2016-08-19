@@ -1,0 +1,17 @@
+{
+    "name": "test imega/composer",
+    "description": "This project to test imega/composer",
+    "authors": [
+        {
+            "name": "Dmitry Gavriloff",
+            "homepage": "http://imega.ru/"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "container-interop/container-interop": "^1.0",
+        "pimple/pimple": "^3.0",
+        "phpunit/phpunit": "^5.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    }
+}

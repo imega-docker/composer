@@ -3,9 +3,9 @@ machine:
     - docker
 
 dependencies:
-  override:
+  pre:
     - docker build -t imega/composer:$CIRCLE_SHA1 .
 
 test:
-  install:
-    - docker run -rm -v `pwd`:/data imega/composer:$CIRCLE_SHA1 install
+  post:
+    - docker run --rm -v `pwd`:/data imega/composer:$CIRCLE_SHA1 install
