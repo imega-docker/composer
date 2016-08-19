@@ -37,6 +37,7 @@ $ docker run --rm -v /path/to/project/:/data imega/composer:1.2.0 install --no-d
   - php7-openssl (7.0.9-r0)
   - php7-phar (7.0.9-r0)
   - php7-zlib (7.0.9-r0)
+  - php7-dom (7.0.9-r0)
 
 ## PHP Modules
   - Core
@@ -57,6 +58,7 @@ $ docker run --rm -v /path/to/project/:/data imega/composer:1.2.0 install --no-d
   - tokenizer
   - xmlwriter
   - zlib
+  - dom
 
 ## The MIT License (MIT)
 
