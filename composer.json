@@ -1,17 +1,29 @@
 {
-    "name": "test imega/composer",
-    "description": "This project to test imega/composer",
-    "authors": [
-        {
-            "name": "Dmitry Gavriloff",
-            "homepage": "http://imega.ru/"
-        }
-    ],
-    "license": "MIT",
-    "require": {
-        "container-interop/container-interop": "^1.0",
-        "pimple/pimple": "^3.0",
-        "phpunit/phpunit": "^5.0",
-        "squizlabs/php_codesniffer": "^2.3"
+  "name": "test imega/composer",
+  "description": "This project to test imega/composer",
+  "authors": [
+    {
+      "name": "Dmitry Gavriloff",
+      "homepage": "http://imega.ru/"
     }
+  ],
+  "license": "MIT",
+  "require": {
+    "acclimate/container": "~1.0",
+    "container-interop/container-interop": "^1.0",
+    "doctrine/orm": "2.*",
+    "mnapoli/php-di": "~4.3",
+    "mnapoli/php-di-symfony2": "*",
+    "monolog/monolog": "~1.6",
+    "phpunit/phpunit": "^5.0",
+    "psr/log": "~1.0",
+    "sensio/distribution-bundle": "~2.3",
+    "sensio/framework-extra-bundle": "~2.3",
+    "sensio/generator-bundle": "~2.3",
+    "squizlabs/php_codesniffer": "^2.3",
+    "silex/silex": "v2.0.0",
+    "symfony/symfony": "~2.3",
+    "twig/twig": "~1.8",
+    "zendframework/zendframework1": "~1.12"
+  }
 }

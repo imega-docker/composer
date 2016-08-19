@@ -18,4 +18,8 @@ build:
 			" \
 		-d="curl"
 
+test:
+	@docker build -t imega/composer:test .
+	@docker run --rm -v $(CURDIR):/data imega/composer:test install --ignore-platform-reqs
+
 .PHONY: build
