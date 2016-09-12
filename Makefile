@@ -4,17 +4,17 @@ build:
 	@docker run --rm \
 		-v $(CURDIR)/runner:/runner \
 		-v $(CURDIR)/build:/build \
-		imega/base-builder:1.1.3 \
+		imega/base-builder \
 		--packages=" \
 			git \
-			php7@testing \
-			php7-common@testing \
-			php7-phar@testing \
-			php7-openssl@testing \
-			php7-mbstring@testing \
-			php7-json@testing \
-			php7-zlib@testing \
-			php7-dom@testing \
+			php7@community \
+			php7-common@community \
+			php7-phar@community \
+			php7-openssl@community \
+			php7-mbstring@community \
+			php7-json@community \
+			php7-zlib@community \
+			php7-dom@community \
 			" \
 		-d="curl"
 

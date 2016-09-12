@@ -1,45 +1,46 @@
 # Composer
 This is docker image to run the [composer](https://getcomposer.org).
 
-[![](https://images.microbadger.com/badges/image/imega/composer:1.2.0.svg)](http://microbadger.com/images/imega/composer:1.2.0 "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/imega/composer.svg)](http://microbadger.com/images/imega/composer "Get your own image badge on microbadger.com")
 
 [![CircleCI](https://circleci.com/gh/imega-docker/composer.svg?style=svg)](https://circleci.com/gh/imega-docker/composer)
 
-Image size: 34.81 MB
+Image size: 35 MB
 
 From image: alpine:3.4
 
-PHP 7.0.9
+PHP 7.0.10
 
-Composer version: 1.2.0
+Composer version: 1.2.1
 
 ## Usage
 
 ```
-$ docker run --rm -v /path/to/project/:/data imega/composer:1.2.0 install --no-dev --ignore-platform-reqs --no-interaction
+$ docker run --rm -v /path/to/project/:/data imega/composer install --no-dev --ignore-platform-reqs --no-interaction
 ```
 
 ## Alpine Packages
   - musl (1.1.14-r11)
   - zlib (1.2.8-r2)
-  - libcrypto1.0 (1.0.2h-r1)
+  - libcrypto1.0 (1.0.2h-r2)
   - busybox (1.24.2-r11)
   - ca-certificates (20160104-r4)
-  - libssl1.0 (1.0.2h-r1)
+  - libssl1.0 (1.0.2h-r2)
   - libssh2 (1.7.0-r0)
   - libcurl (7.50.1-r0)
   - expat (2.1.1-r1)
   - pcre (8.38-r1)
   - git (2.8.3-r0)
-  - php7-common (7.0.9-r0)
+  - php7-common (7.0.10-r2)
   - libxml2 (2.9.4-r0)
-  - php7 (7.0.9-r0)
-  - php7-json (7.0.9-r0)
-  - php7-mbstring (7.0.9-r0)
-  - php7-openssl (7.0.9-r0)
-  - php7-phar (7.0.9-r0)
-  - php7-zlib (7.0.9-r0)
-  - php7-dom (7.0.9-r0)
+  - php7 (7.0.10-r2)
+  - php7-xml (7.0.10-r2)
+  - php7-dom (7.0.10-r2)
+  - php7-json (7.0.10-r2)
+  - php7-mbstring (7.0.10-r2)
+  - php7-openssl (7.0.10-r2)
+  - php7-phar (7.0.10-r2)
+  - php7-zlib (7.0.10-r2)
 
 ## PHP Modules
   - Core
