@@ -7,6 +7,7 @@ build:
 		imega/base-builder \
 		--packages=" \
 			git \
+			libressl@main \
 			php7@community \
 			php7-common@community \
 			php7-phar@community \
