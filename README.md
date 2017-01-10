@@ -3,13 +3,13 @@ This is docker image to run the [composer](https://getcomposer.org).
 
 [![](https://images.microbadger.com/badges/image/imega/composer.svg)](http://microbadger.com/images/imega/composer "Get your own image badge on microbadger.com") [![CircleCI](https://circleci.com/gh/imega-docker/composer.svg?style=svg)](https://circleci.com/gh/imega-docker/composer) [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star&maxAge=2592000)](https://github.com/imega-docker/composer)
 
-Image size: 43 MB
+Image size: 39 MB
 
-From image: alpine:3.4
+From image: alpine:3.5
 
 PHP 7.0.14
 
-Composer version: 1.3.0
+Composer version: 1.3.1
 
 ## Usage
 
@@ -18,19 +18,17 @@ $ docker run --rm -v /path/to/project/:/data imega/composer install --no-dev --i
 ```
 
 ## Alpine Packages
- - musl (1.1.14-r14)
- - zlib (1.2.8-r2)
- - libcrypto1.0 (1.0.2j-r0)
- - busybox (1.24.2-r12)
- - ca-certificates (20160104-r4)
- - libssl1.0 (1.0.2j-r0)
- - libssh2 (1.7.0-r0)
- - libcurl (7.51.0-r0)
- - expat (2.1.1-r2)
- - pcre (8.38-r1)
- - git (2.8.3-r0)
+ - musl (1.1.15-r5)
  - libressl2.4-libcrypto (2.4.4-r0)
+ - busybox (1.25.1-r0)
+ - ca-certificates (20161130-r0)
+ - zlib (1.2.8-r2)
+ - libssh2 (1.7.0-r2)
  - libressl2.4-libssl (2.4.4-r0)
+ - libcurl (7.52.1-r0)
+ - expat (2.2.0-r0)
+ - pcre (8.39-r0)
+ - git (2.11.0-r0)
  - libressl (2.4.4-r0)
  - php7-common (7.0.14-r5)
  - ncurses-terminfo-base (6.0-r7)
@@ -39,7 +37,7 @@ $ docker run --rm -v /path/to/project/:/data imega/composer install --no-dev --i
  - libedit (20150325.3.1-r3)
  - libxml2 (2.9.4-r0)
  - php7 (7.0.14-r5)
- - php7-xml (7.0.14-r5)
+ - php7-xml (7.0.14-r4)
  - php7-dom (7.0.14-r5)
  - php7-json (7.0.14-r5)
  - php7-mbstring (7.0.14-r5)
