@@ -13,8 +13,24 @@ Composer version: 1.3.1
 
 ## Usage
 
+#### Put in file ~/.bash_profile
 ```
-$ docker run --rm -v /path/to/project/:/data imega/composer install --no-dev --ignore-platform-reqs --no-interaction
+alias composer='docker run --rm -it -v `pwd`:`pwd` -w `pwd` imega/composer'
+```
+
+#### Reload .bash_profile
+```
+$ source ~/.bash_profile
+```
+
+#### And type in console
+```
+$ composer --version
+```
+
+#### Or
+```
+$ docker run --rm -v /path/to/project:/data imega/composer install --no-dev
 ```
 
 ## Alpine Packages
