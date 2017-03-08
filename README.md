@@ -7,9 +7,9 @@ Image size: 39 MB
 
 From image: alpine:3.5
 
-PHP 7.0.15
+PHP 7.0.16
 
-Composer version: 1.3.2
+Composer version: 1.4.0
 
 ## Usage
 
@@ -41,25 +41,25 @@ $ docker run --rm -v /path/to/project:/data imega/composer install --no-dev
   - zlib (1.2.8-r2)
   - libssh2 (1.7.0-r2)
   - libressl2.4-libssl (2.4.4-r0)
-  - libcurl (7.52.1-r1)
+  - libcurl (7.52.1-r2)
   - expat (2.2.0-r0)
   - pcre (8.39-r0)
-  - git (2.11.0-r0)
-  - libressl (2.4.4-r0)
-  - php7-common (7.0.15-r0)
+  - git (2.11.1-r0)
+  - libressl (2.4.5-r0)
+  - php7-common (7.0.16-r2)
   - ncurses-terminfo-base (6.0-r7)
   - ncurses-terminfo (6.0-r7)
   - ncurses-libs (6.0-r7)
   - libedit (20150325.3.1-r3)
-  - libxml2 (2.9.4-r0)
-  - php7 (7.0.15-r0)
-  - php7-xml (7.0.15-r0)
-  - php7-dom (7.0.15-r0)
-  - php7-json (7.0.15-r0)
-  - php7-mbstring (7.0.15-r0)
-  - php7-openssl (7.0.15-r0)
-  - php7-phar (7.0.15-r0)
-  - php7-zlib (7.0.15-r0)
+  - libxml2 (2.9.4-r1)
+  - php7 (7.0.16-r2)
+  - php7-xml (7.0.16-r0)
+  - php7-dom (7.0.16-r2)
+  - php7-json (7.0.16-r2)
+  - php7-mbstring (7.0.16-r2)
+  - php7-openssl (7.0.16-r2)
+  - php7-phar (7.0.16-r2)
+  - php7-zlib (7.0.16-r2)
 
 ## PHP Modules
   - Core
