@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-curl -k -sS https://getcomposer.org/download/1.4.1/composer.phar -o $ROOTFS/usr/bin/composer
+curl -k -sS https://getcomposer.org/download/1.4.2/composer.phar -o $ROOTFS/usr/bin/composer
 chmod +x $ROOTFS/usr/bin/composer
 
 cd $ROOTFS/usr/bin/
