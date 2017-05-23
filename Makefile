@@ -29,4 +29,4 @@ buildfs:
 
 test:
 	@docker build -t imega/composer:test .
-	@docker run --rm -v $(CURDIR):/data imega/composer:test install --ignore-platform-reqs
+	@docker run --rm -v $(CURDIR):/data imega/composer:test install -vvv --ignore-platform-reqs
