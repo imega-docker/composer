@@ -1,7 +1,7 @@
 # Build rootfs for composer
 TAG = 1.4.2
 
-release: buildfs test
+release:
 	@docker login --username $(DOCKER_USER) --password $(DOCKER_PASS)
 
 build: buildfs test
