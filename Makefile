@@ -1,6 +1,12 @@
 # Build rootfs for composer
+TAG = 1.4.2
 
-build:
+release: buildfs test
+	@docker login --username $(DOCKER_USER) --password $(DOCKER_PASS)
+	@docker build -t imega/composer:latest .
+	@docker build -t imega/composer:$(TAG) .
+
+buildfs:
 	@docker run --rm \
 		-v $(CURDIR)/runner:/runner \
 		-v $(CURDIR)/build:/build \
@@ -22,5 +28,3 @@ build:
 test:
 	@docker build -t imega/composer:test .
 	@docker run --rm -v $(CURDIR):/data imega/composer:test install --ignore-platform-reqs
-
-.PHONY: build
