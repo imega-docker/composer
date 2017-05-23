@@ -5,6 +5,7 @@ machine:
 dependencies:
   pre:
     - echo "memory_limit = -1" > /opt/circleci/php/$(phpenv global)/etc/conf.d/memory.ini
+    - make buildfs
     - docker build -t imega/composer:$CIRCLE_SHA1 .
 
 test:
