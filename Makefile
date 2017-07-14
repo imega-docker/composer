@@ -5,8 +5,8 @@ release:
 	@docker login --username $(DOCKER_USER) --password $(DOCKER_PASS)
 
 build: buildfs test
-	@docker build -t imega/composer:latest .
 	@docker build -t imega/composer:$(TAG) .
+	@docker tag imega/composer:$(TAG) imega/composer:latest
 
 buildfs:
 	@docker run --rm \
@@ -24,6 +24,7 @@ buildfs:
 			php7-json@community \
 			php7-zlib@community \
 			php7-dom@community \
+			openssh-client \
 			" \
 		-d="curl"
 
