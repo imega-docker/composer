@@ -3,6 +3,8 @@ TAG = 1.4.2
 
 release:
 	@docker login --username $(DOCKER_USER) --password $(DOCKER_PASS)
+	@docker push imega/composer:$(TAG)
+	@docker push imega/composer:latest
 
 build: buildfs test
 	@docker build -t imega/composer:$(TAG) .
