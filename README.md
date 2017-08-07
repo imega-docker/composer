@@ -3,13 +3,13 @@ This is docker image to run the [composer](https://getcomposer.org).
 
 [![](https://images.microbadger.com/badges/image/imega/composer.svg)](http://microbadger.com/images/imega/composer "Get your own image badge on microbadger.com") [![CircleCI](https://circleci.com/gh/imega-docker/composer.svg?style=svg)](https://circleci.com/gh/imega-docker/composer) [![Build Status](https://travis-ci.org/imega-docker/composer.svg?branch=master)](https://travis-ci.org/imega-docker/composer) [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star&maxAge=2592000)](https://github.com/imega-docker/composer)
 
-Image size: 41.4 MB
+Image size: 41.39 MB
 
 From image: alpine:3.5
 
-PHP 7.1.6
+PHP 7.1.7
 
-Composer version: 1.4.2
+Composer version: 1.4.3
 
 ## Usage
 
@@ -50,19 +50,19 @@ $ docker run --rm -v /path/to/project:/data imega/composer install --no-dev
   - libressl2.5-libtls (2.5.5-r0)
   - libressl (2.5.5-r0)
   - openssh-client (7.4_p1-r0)
-  - php7-common (7.1.6-r0)
+  - php7-common (7.1.7-r0)
   - ncurses-terminfo-base (6.0-r7)
   - ncurses-terminfo (6.0-r7)
   - ncurses-libs (6.0-r7)
   - libedit (20150325.3.1-r3)
   - libxml2 (2.9.4-r3)
-  - php7 (7.1.6-r0)
-  - php7-dom (7.1.6-r0)
-  - php7-json (7.1.6-r0)
-  - php7-mbstring (7.1.6-r0)
-  - php7-openssl (7.1.6-r0)
-  - php7-phar (7.1.6-r0)
-  - php7-zlib (7.1.6-r0)
+  - php7 (7.1.7-r0)
+  - php7-dom (7.1.7-r0)
+  - php7-json (7.1.7-r0)
+  - php7-mbstring (7.1.7-r0)
+  - php7-openssl (7.1.7-r0)
+  - php7-phar (7.1.7-r0)
+  - php7-zlib (7.1.7-r0)
 
 ## PHP Modules
   - Core

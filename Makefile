@@ -1,5 +1,5 @@
 # Build rootfs for composer
-TAG = 1.4.2
+TAG = 1.4.3
 
 release:
 	@docker login --username $(DOCKER_USER) --password $(DOCKER_PASS)
@@ -14,6 +14,7 @@ buildfs:
 	@docker run --rm \
 		-v $(CURDIR)/runner:/runner \
 		-v $(CURDIR)/build:/build \
+		-e TAG=$(TAG) \
 		imega/base-builder \
 		--packages=" \
 			git \
