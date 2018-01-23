@@ -9,7 +9,7 @@ From image: alpine:3.7
 
 PHP 7.1.12
 
-Composer version: 1.6.0
+Composer version: 1.6.1
 
 ## Usage
 

@@ -1,5 +1,5 @@
 # Build rootfs for composer
-TAG = 1.6.0
+TAG = 1.6.1
 
 release:
 	@docker login --username $(DOCKER_USER) --password $(DOCKER_PASS)
