@@ -1,9 +1,9 @@
 {
-  "name": "test imega/composer",
+  "name": "test-imega/composer",
   "description": "This project to test imega/composer",
   "authors": [
     {
-      "name": "Dmitry Gavriloff",
+      "name": "Dmitry Stoletoff",
       "homepage": "http://imega.ru/"
     }
   ],

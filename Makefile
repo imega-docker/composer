@@ -1,5 +1,5 @@
 # Build rootfs for composer
-TAG = 1.5.2
+TAG = 1.5.3
 
 release:
 	@docker login --username $(DOCKER_USER) --password $(DOCKER_PASS)
@@ -15,18 +15,18 @@ buildfs:
 		-v $(CURDIR)/runner:/runner \
 		-v $(CURDIR)/build:/build \
 		-e TAG=$(TAG) \
-		imega/base-builder \
+		imega/base-builder:1.6.0 \
 		--packages=" \
+			busybox@main \
 			git \
-			libressl@main \
-			php7@community \
-			php7-common@community \
-			php7-phar@community \
-			php7-openssl@community \
-			php7-mbstring@community \
-			php7-json@community \
-			php7-zlib@community \
-			php7-dom@community \
+			php7 \
+			php7-common \
+			php7-phar \
+			php7-openssl \
+			php7-mbstring \
+			php7-json \
+			php7-zlib \
+			php7-dom \
 			openssh-client \
 			" \
 		-d="curl"
