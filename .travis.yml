@@ -8,7 +8,7 @@ script:
 - NV=`curl --silent "https://api.github.com/repos/composer/composer/releases/latest" | docker run --rm -i imega/jq -r '.tag_name'`
 - RELEASE=0
 - docker pull imega/composer:$NV || RELEASE=1
-- make build || exit 1
+- make build TAG=$NV || exit 1
 after_success:
 - |
   [ "${RELEASE}" == "1" ] && (make release DOCKER_USER=$DOCKER_USER DOCKER_PASS=$DOCKER_PASS TAG=$NV)
