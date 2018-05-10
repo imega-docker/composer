@@ -34,3 +34,6 @@ buildfs:
 test:
 	@docker build -t imega/composer:test .
 	@docker run --rm -v $(CURDIR):/data imega/composer:test install -vvv --ignore-platform-reqs
+
+getlatest:
+	curl --silent "https://api.github.com/repos/composer/composer/releases/latest" | docker run --rm -i imega/jq -r '.tag_name'
