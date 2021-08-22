@@ -8,7 +8,7 @@ release: build
 		echo PUSH && \
 		docker login --username $(DOCKER_USER) --password $(DOCKER_PASS) && \
 		docker push imega/composer:$(TAG) && \
-		docker push imega/composer:latest \
+		docker push imega/composer:latest || echo Err:$$? \
 	; fi
 
 build: buildfs test
