@@ -1,6 +1,7 @@
 FROM scratch
 
-MAINTAINER Dmitry Stoletoff <info@imega.ru>
+LABEL maintainer="Dmitry Stoletoff <i n f o @ i m e g a . r u>" \
+    description="This is docker image to run a MySQL client."
 
 ENV COMPOSER_CACHE_DIR=/cache
 WORKDIR /data

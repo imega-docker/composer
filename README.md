@@ -1,4 +1,5 @@
 # Composer
+
 This is docker image to run the [composer](https://getcomposer.org).
 
 [![](https://images.microbadger.com/badges/version/imega/composer.svg)](https://microbadger.com/images/imega/composer "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/imega/composer.svg)](http://microbadger.com/images/imega/composer "Get your own image badge on microbadger.com") [![CircleCI](https://circleci.com/gh/imega-docker/composer.svg?style=svg)](https://circleci.com/gh/imega-docker/composer) [![Build Status](https://travis-ci.org/imega-docker/composer.svg?branch=master)](https://travis-ci.org/imega-docker/composer) [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star&maxAge=2592000)](https://github.com/imega-docker/composer)
@@ -6,74 +7,51 @@ This is docker image to run the [composer](https://getcomposer.org).
 ## Usage
 
 #### Put in file ~/.bash_profile
+
 ```
 alias composer='docker run --rm -it -v `pwd`:`pwd` -w `pwd` imega/composer'
 ```
 
 #### Reload .bash_profile
+
 ```
 $ source ~/.bash_profile
 ```
 
 #### And type in console
+
 ```
 $ composer --version
 ```
 
 #### Or
+
 ```
 $ docker run --rm -v /path/to/project:/data imega/composer install --no-dev
 ```
 
-## Alpine Packages
-  - musl
-  - busybox
-  - libressl2.6-libcrypto
-  - ca-certificates
-  - zlib
-  - libssh2
-  - libressl2.6-libssl
-  - libcurl
-  - expat
-  - pcre2
-  - git
-  - openssh-keygen
-  - openssh-client
-  - php7-common
-  - ncurses-terminfo-base
-  - ncurses-terminfo
-  - ncurses-libs
-  - libedit
-  - pcre
-  - libxml2
-  - php7
-  - php7-dom
-  - php7-json
-  - php7-mbstring
-  - php7-openssl
-  - php7-phar
-
 ## PHP Modules
-  - Core
-  - date
-  - dom
-  - fileinfo
-  - filter
-  - hash
-  - json
-  - libxml
-  - mbstring
-  - openssl
-  - pcre
-  - Phar
-  - Reflection
-  - SimpleXML
-  - SPL
-  - standard
-  - tokenizer
-  - xml
-  - xmlwriter
-  - zlib
+
+- Core
+- date
+- dom
+- fileinfo
+- filter
+- hash
+- json
+- libxml
+- mbstring
+- openssl
+- pcre
+- Phar
+- Reflection
+- SimpleXML
+- SPL
+- standard
+- tokenizer
+- xml
+- xmlwriter
+- zlib
 
 ## The MIT License (MIT)
 
