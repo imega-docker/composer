@@ -2,14 +2,14 @@
 TAG = 1.6.4
 
 release: TAG=$(shell curl --silent "https://api.github.com/repos/composer/composer/releases/latest" | docker run --rm -i imega/jq -r '.tag_name')
-release: RET=$(shell docker pull imega/composer:${VER};echo $$?)
-release: build
-	@if [ "$(RET)" = "0" ]; then \
-		exit 0 \
+release: RET=$(shell docker pull imega/composer:${VER}; echo $$?)
+release:
+	@if [ "$(RET)" = "1" ]; then \
+		docker login --username $(DOCKER_USER) --password $(DOCKER_PASS) && \
+		docker push imega/composer:$(TAG) && \
+		docker push imega/composer:latest \
 	; fi
-	@docker login --username $(DOCKER_USER) --password $(DOCKER_PASS)
-	@docker push imega/composer:$(TAG)
-	@docker push imega/composer:latest
+
 
 build: buildfs test
 	@docker build -t imega/composer:$(TAG) .
