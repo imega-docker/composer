@@ -1,10 +1,11 @@
 # Build rootfs for composer
 TAG = 1.6.4
 
-release: VER=$(shell curl --silent "https://api.github.com/repos/composer/composer/releases/latest" | docker run --rm -i imega/jq -r '.tag_name')
+release: TAG=$(shell curl --silent "https://api.github.com/repos/composer/composer/releases/latest" | docker run --rm -i imega/jq -r '.tag_name')
 release: RET=$(shell docker pull imega/composer:${VER};echo $$?)
 release: build
 	@if [ "$(RET)" = "1" ]; then \
+		echo PUSH && \
 		docker login --username $(DOCKER_USER) --password $(DOCKER_PASS) && \
 		docker push imega/composer:$(TAG) && \
 		docker push imega/composer:latest \
