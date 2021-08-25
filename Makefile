@@ -4,8 +4,8 @@ TAG = 1.6.4
 release: TAG=$(shell curl --silent "https://api.github.com/repos/composer/composer/releases/latest" | docker run --rm -i imega/jq -r '.tag_name')
 release: build
 	@docker pull imega/composer:${TAG} || ( \
-		docker push imega/composer1:$(TAG) && \
-		docker push imega/composer1:latest \
+		docker push imega/composer:$(TAG) && \
+		docker push imega/composer:latest \
 	)
 
 
