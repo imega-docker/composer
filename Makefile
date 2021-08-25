@@ -1,14 +1,13 @@
 # Build rootfs for composer
 TAG = 1.6.4
 
-release: TAG=$(shell curl --silent "https://api.github.com/repos/composer/composer/releases/latest" | docker run --rm -t imega/jq -r '.tag_name')
-release: RET=$(shell docker pull imega/composer:${VER}; echo $$?)
-release:
-	@if [ "$(RET)" = "1" ]; then \
+release: TAG=$(shell curl --silent "https://api.github.com/repos/composer/composer/releases/latest" | docker run --rm -i imega/jq -r '.tag_name')
+release: build
+	@docker pull imega/composer:${TAG} || ( \
 		docker login --username $(DOCKER_USER) --password $(DOCKER_PASS) && \
-		docker push imega/composer:$(TAG) && \
-		docker push imega/composer:latest \
-	; fi
+		docker push imega/composer1:$(TAG) && \
+		docker push imega/composer1:latest \
+	)
 
 
 build: buildfs test
