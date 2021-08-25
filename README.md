@@ -2,7 +2,7 @@
 
 This is docker image to run the [composer](https://getcomposer.org).
 
-![Build Status](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![Build status](https://github.com/imega-docker/composer/actions/workflows/release.yml/badge.svg)
 
 ## Usage
 
